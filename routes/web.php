@@ -14,10 +14,6 @@ use App\Http\Controllers\VoitureController;
 |
 */
 
-Route::get('/', function () {
-    return view('voitures.index');
-});
-
 Route::get('index', [VoitureController::Class, 'index']);
 Route::get('admin', [VoitureController::Class, 'admin']);
 
