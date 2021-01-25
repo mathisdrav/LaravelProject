@@ -14,8 +14,8 @@ use App\Http\Controllers\VoitureController;
 |
 */
 
-Route::get('index', [VoitureController::Class, 'index']);
-Route::get('admin', [VoitureController::Class, 'admin']);
+Route::get('index', [VoitureController::Class, 'index']);       //page d'accueil
+Route::get('admin', [VoitureController::Class, 'admin']);       //page d'accueil admin
 
 Route::get('create', [VoitureController::Class, 'create']);
 Route::post('create', [VoitureController::Class, 'store']);
